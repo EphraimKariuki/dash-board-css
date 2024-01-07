@@ -1,3 +1,5 @@
+
+
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -5,34 +7,91 @@
 
 .dash-board-header {
     background-color: red;
-    width: 75vw;
+    width: 85vw;
     height: 20vh;
 }
 
 .dash-board-aside {
     background-color: blue;
     height: 100vh;
-    width: 25vw;
+    width: 15vw;
     grid-column: 1;
     grid-row: 1 / span 2;
     color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 
-.aside-dash-board {
+
+
+.aside-tittle {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 130px;
     margin-left: 10px;
     margin-top: 10px;
 }
-.aside-svg {
+.aside-title-svg {
     fill: white;
     height: 50px;
 
 }
+.aside-main-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 130px;
+    margin-left: 10px;
+}
+.aside-main-svg {
+    fill: white;
+    height: 30px;
+}
+
+.aside-footer-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 130px;
+    margin-left: 10px;
+}
+.aside-footer-svg {
+    fill: white;
+    height: 30px;
+}
+
 
 .dash-board-main {
     background-color: aqua;
-    width: 75vw;
+    width: 85vw;
     height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#your-projects-h4 {
+    grid-column: 1 / span 2;
+    
+}
+
+.main-card {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.main-aside {
+    grid-column: 3;
+    grid-row: 2 / span 3;
+    
+   
+}
+
+.main-aside-announcements {
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    
 }
